@@ -1,2 +1,2 @@
-# docker_images
-Collection of Docker images
+# Docker Images
+Collection of Dockerfiles for various ruby images.
