@@ -4,11 +4,11 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     && apt-get -y -q install \
         autoconf \
         bison \
-	build-essential \
+	      build-essential \
         curl \
         git-core \
         imagemagick \
-	libsqlite3-dev \
+	      libsqlite3-dev \
         libcurl4-gnutls-dev \
         libmagickwand-dev \
         libmysqlclient-dev \
@@ -40,4 +40,5 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
      && git checkout v1.8.30 \
      && ruby setup.rb \
      && cd -  \
-     && rm -fr rubygems
+     && rm -fr rubygems \
+     && gem install bundler -v 1.1.3
