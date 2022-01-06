@@ -41,4 +41,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
      && ruby setup.rb \
      && cd -  \
      && rm -fr rubygems \
-     && gem install bundler -v 1.1.3
+     && gem install bundler -v 1.0.22
